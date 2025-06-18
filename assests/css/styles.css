@@ -1,0 +1,90 @@
+:root{
+    --main-color:#f3eded;
+    --secodary:#FFFFFF;
+    --btn-color:#7843E9;
+}
+header nav{
+    height: 14vh;
+    background: #FFFF;
+}
+header nav .navbar-brand{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header nav ul li{
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+header nav ul li a:hover{
+    color: var(--btn-color) !important;
+}
+#hero{
+    /* background-image: url(/assests/img/bg-hero.png); */
+    /* background: rgba(246, 246, 246, 0.1); */
+    background: var(--main-color);
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+#hero h1{
+    /* font-size: 3.5rem; */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#hero p{
+    /* width: 700px; */
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+#hero button{
+    background: var(--btn-color);
+    color: #fff;
+    padding: 16px 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: scale(.9);
+}
+#hero button:hover{
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+}
+#hero .head-floater{
+    width: 60px;
+    height: 180px;
+    background:#fff;
+    position: absolute;
+    left: 20;
+    top: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    padding:  5px 0;
+}
+#hero .head-floater i{
+    font-size: 1.8rem;
+    padding: 8px;
+}
+#hero .head-floater i:hover{
+    background: var(--main-color);
+    transition: all .3s ease-in-out;
+}
+
+
+/* Screen 600px */
+@media screen and (max-width:992px) {
+    #hero .head-floater{
+    display: none;
+}
+   
+}
+
+
+
+
