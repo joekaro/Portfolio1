@@ -1,35 +1,53 @@
 :root{
-    --main-color:#f3eded;
-    --secodary:#FFFFFF;
-    --btn-color:#7843E9;
+    --main-color:#EEEEEE;
+    --secodary:#F7F7F7;
+    --btn-color:#2A4759;
+    --style:#F79B72;
+    --text-color:#333;
+    --black: #000;
+    --white: #fff;
 }
-header nav{
-    height: 14vh;
+.line{
+    width: 40px;
+    height: 6px;
+    background: var(--btn-color);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ h3{
+    font-weight: bold;
+}
+
+/* Nav */
+nav{
     background: #FFFF;
 }
-header nav .navbar-brand{
+nav .navbar-brand{
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
 }
-header nav ul li{
+nav ul li{
     font-weight: bold;
     font-size: 1rem;
     text-transform: uppercase;
 }
-header nav ul li a:hover{
+nav ul li a:hover{
     color: var(--btn-color) !important;
 }
 #hero{
-    /* background-image: url(/assests/img/bg-hero.png); */
-    /* background: rgba(246, 246, 246, 0.1); */
     background: var(--main-color);
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     position: relative;
+    padding-top: 50px;
 }
 #hero h1{
-    /* font-size: 3.5rem; */
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -55,11 +73,11 @@ header nav ul li a:hover{
 }
 #hero .head-floater{
     width: 60px;
-    height: 180px;
+    height: 190px;
     background:#fff;
     position: absolute;
     left: 20;
-    top: 190px;
+    top: 50px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -71,10 +89,63 @@ header nav ul li a:hover{
     font-size: 1.8rem;
     padding: 8px;
 }
+#hero .head-floater a{
+    color: var(--text-color);
+}
 #hero .head-floater i:hover{
     background: var(--main-color);
     transition: all .3s ease-in-out;
 }
+
+/* about */
+#about{
+    background: var(--secodary);
+    height: auto;
+    padding: 100px 0;
+}
+
+#about .left p{
+    font-weight: 470;
+    text-align: justify;
+}
+#about .left button{
+    background: var(--btn-color);
+    color: #fff;
+    padding: 9px 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#about button:hover{
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+}
+#about .right button{
+    background: var(--main-color);
+    margin-bottom: 15px;
+    margin-right: 7px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Projects */
+#projects{
+    background:var(--main-color);
+    padding: 100px 0;
+    height: auto;
+}
+#projects img{
+    width: 500px;
+    height: 260px;
+}
+
+
+
+
+
+
 
 
 /* Screen 600px */
