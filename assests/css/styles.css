@@ -108,6 +108,9 @@ nav ul li a:hover{
     font-weight: 470;
     text-align: justify;
 }
+#about .linkedin{
+    color: var(--btn-color);
+}
 #about .left button{
     background: var(--btn-color);
     color: #fff;
@@ -137,13 +140,51 @@ nav ul li a:hover{
     height: auto;
 }
 #projects img{
-    width: 500px;
-    height: 260px;
+    width: 600px;
+    height: 400px;
 }
-
-
-
-
+#projects a button{
+    background: var(--btn-color);
+    color: var(--white);
+    font-weight: 500;
+}
+/* Contact */
+#contact{
+    background: var(--secodary);
+    padding: 100px 0;
+    height: auto;
+}
+#contact .card{
+    width: 75%;
+}
+#contact form label{
+    font-weight: bold;
+}
+#contact form input,
+#contact form textarea
+ {
+    background: var(--secodary);
+}
+#contact form button{
+    background: var(--btn-color);
+    color: var(--white);
+    font-weight: bold ;
+}
+footer{
+    background: var(--black);
+    color: var(--white);
+    padding: 100px 0;
+}
+footer a{
+    color: var(--white);
+}
+footer i{
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+footer .copy{
+    font-size: 0.7rem;
+}
 
 
 
